@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "eLit",
+    "slug": "elit",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/eLiticon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/eLitsplash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
+    ],
+    "ios": {
+      "config": {
+        "usesNonExemptEncryption": false,
+        "googleMapsApiKey": "AIzaSyCO_6Xp-fB-O3FbxFoJztLRRAFfhglZz40"
+      },
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/eLitadaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCO_6Xp-fB-O3FbxFoJztLRRAFfhglZz40"
+        }
+      },
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE"
+      ],
+      "package": "com.halif32.eLit"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "19a67e2c-ad02-4618-a6d2-efdcd13fa3f9"
+      }
+    },
+    "owner": "halif32"
+  }
+}
